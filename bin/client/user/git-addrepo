@@ -1,0 +1,3 @@
+#!/bin/bash
+GITSERV_USERNAME=${GITSERV_USERNAME:-"$USER"}
+ssh "$GITSERV_USERNAME"@gitserv "addrepo $1"

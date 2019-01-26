@@ -1,0 +1,5 @@
+#!/bin/bash
+reponame=$(echo "$1" | tr -cd a-zA-Z0-9\-\_)
+install -d -m 0770 -g git "/srv/git/$reponame.git";
+git init --bare --shared "/srv/git/$reponame.git";
+chgrp -R git "/srv/git/$reponame.git"

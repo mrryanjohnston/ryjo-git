@@ -1,0 +1,20 @@
+Source: ryjo-git
+Standards-Version: 4.0.0
+Maintainer: Ryan Johnston
+
+Package: ryjo-git-client
+Architecture: all
+Depends: git
+Description: Client binaries for interacting with your ryjo git server
+
+Package: ryjo-git-client-admin
+Architecture: all
+Depends: git
+Description: Client admin binaries for interacting with your ryjo git server.
+  Only distribute this binary to your administrative users
+  that can use the ubuntu user on your git server!
+
+Package: ryjo-git-server
+Architecture: all
+Depends: git
+Description: Server binaries that clients call to interact with your ryjo git server

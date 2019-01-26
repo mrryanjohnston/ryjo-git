@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh ubuntu@gitservadmin "addgituser $1 \"$2\""

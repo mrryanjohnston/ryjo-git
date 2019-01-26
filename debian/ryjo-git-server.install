@@ -1,0 +1,2 @@
+bin/server/admin/addgituser usr/bin
+bin/server/user/addrepo usr/lib/ryjo-git

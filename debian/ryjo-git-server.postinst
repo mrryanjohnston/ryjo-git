@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+case "$1" in
+  configure)
+    groupadd -f git
+    echo /usr/bin/git-shell >> /etc/shells
+    chown root:git /srv/git
+    chmod 770 /srv/git
+  ;;
+  abort-upgrade|abort-remove|abort-deconfigure)
+  ;;
+  *)
+    echo "postinst called with unknown argument $1"
+    exit 1
+  ;;
+esac
+
+#DEBHELPER#
+
+exit 0

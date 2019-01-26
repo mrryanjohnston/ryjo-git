@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+case "$1" in
+  configure)
+    cat << CONFIG >> ~/.ssh/config
+Host gitserv
+    Hostname 0.0.0.0
+    IdentityFile ~/.ssh/id_rsa
+    IdentitiesOnly yes
+CONFIG
+  ;;
+  abort-upgrade|abort-remove|abort-deconfigure)
+  ;;
+  *)
+    echo "postinst called with unknown argument $1"
+    exit 1
+  ;;
+esac
+
+#DEBHELPER#
+
+exit 0
