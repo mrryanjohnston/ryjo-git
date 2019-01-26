@@ -39,9 +39,9 @@ a read to see what other nice things it does for us.
 
 Now that you've got your server set up, we can install the binaries that our
 admins and users will run. I've created some pre built binaries you can get
-[here](). Either that, or do `debuild --no-tgz-check` to build the `deb`
-packages. Copy the `ryjo-git-server_0.0.1_all.deb` file to the server and
-install it like so:
+[here](https://github.com/mrryanjohnston/ryjo-git/releases). Either that, or do
+`debuild --no-tgz-check` to build the `deb` packages. Copy the
+`ryjo-git-server_0.0.1_all.deb` file to the server and install it like so:
 
 ```bash
 scp ryjo-git-server_0.0.1_all.deb ubuntu@gitservadmin:~
